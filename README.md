@@ -84,6 +84,7 @@ GEMINI_API_KEY="your_api_key_here"
 
 ## Demo
 
+demo video is in the assets please have a look into it.
 <video src="assets/clipforge_output.mp4" controls="controls" style="max-width: 100%;">
   Your browser does not support the video tag.
 </video>
