@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 # Import custom modules
 from peak_detector import get_peak_segments
 from transcriber import transcribe_audio
-from gemini_engine import analyze_transcript
+from gemini_engine import analyze_with_gemini
 from face_tracker import get_face_center_x
 from video_processor import process_video
 
@@ -66,7 +66,7 @@ def main():
                 # Step 3: Analyze with Gemini AI
                 status_text.info("Analyzing with Gemini AI...")
                 progress_bar.progress(60)
-                analysis = analyze_transcript(transcript_text, peaks)
+                analysis = analyze_with_gemini(transcript_text, peaks)
                 
                 if not analysis:
                     st.error("Gemini AI failed to analyze the transcript. Check the console for errors.")

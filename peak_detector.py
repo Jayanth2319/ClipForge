@@ -2,7 +2,7 @@ import os
 import tempfile
 import numpy as np
 import librosa
-from moviepy import VideoFileClip
+from moviepy.editor import VideoFileClip
 
 def get_peak_segments(video_path, num_segments=3, segment_duration=60):
     """
