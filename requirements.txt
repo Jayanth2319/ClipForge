@@ -1,0 +1,12 @@
+streamlit
+moviepy==1.0.3
+librosa
+mediapipe
+google-generativeai
+openai-whisper
+python-dotenv
+Pillow
+numpy<2.0.0
+opencv-python
+imageio
+imageio-ffmpeg
